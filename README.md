@@ -1,16 +1,185 @@
-# React + Vite
+ReactJS Assignment Application
+📌 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-This project is a multi-screen ReactJS application developed as part of a technical assessment.
+-It demonstrates authentication, REST API integration, dynamic routing, camera access, and data visualization using charts.
 
-Currently, two official plugins are available:
+The application consists of 4 primary screens along with an additional chart visualization screen.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+1️⃣ Login Page
 
-## React Compiler
+-Simple authentication system
+-Valid credentials:
+-Username: testuser
+-Password: Test123
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Redirects to List Page upon successful login
 
-## Expanding the ESLint configuration
+2️⃣ List Page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-Fetches employee data from REST API
+-Displays data in structured format
+
+Navigation to:
+
+-Employee Details Page
+-Salary Chart Page
+
+3️⃣ Details Page
+
+-Displays complete information of selected employee
+-Includes button to capture photo using device camera
+
+4️⃣ Photo Result Page
+
+-Displays the image captured from camera
+-Allows user to verify captured photo
+
+5️⃣ Chart Visualization Page
+
+-Bar chart displaying salaries of the first 10 employees
+-Provides visual representation of API data
+
+🛠️ Tech Stack
+
+-ReactJS (Vite)
+-React Router DOM
+-REST API Integration (Fetch/Axios)
+-HTML5 Camera API (MediaDevices)
+-Chart Library (Recharts / Chart.js)
+-CSS
+
+🔗 API Integration
+
+Endpoint:
+
+-https://backend.jotish.in/backend_dev/gettabledata.php
+
+-Request Method: POST
+
+Request Body:
+
+{
+  "username": "test",
+  "password": "123456"
+}
+📁 Project Structure
+src/
+ ├── pages/
+ │   ├── Login.jsx
+ │   ├── List.jsx
+ │   ├── Details.jsx
+ │   ├── PhotoResult.jsx
+ │   └── ChartPage.jsx
+ ├── App.jsx
+ └── main.jsx
+
+
+Clone the repository
+
+1.Install dependencies:
+
+-npm install
+
+2.Start development server:
+
+-npm run dev
+
+3.Open in browser:
+
+-http://localhost:5173
+
+
+ReactJS Assignment Application
+📌 Project Overview
+
+-This project is a multi-screen ReactJS application developed as part of a technical assessment.
+-It demonstrates authentication, REST API integration, dynamic routing, camera access, and data visualization using charts.
+
+The application consists of 4 primary screens along with an additional chart visualization screen.
+
+🚀 Features
+1️⃣ Login Page
+
+-Simple authentication system
+-Valid credentials:
+-Username: testuser
+-Password: Test123
+
+Redirects to List Page upon successful login
+
+2️⃣ List Page
+
+-Fetches employee data from REST API
+-Displays data in structured format
+
+Navigation to:
+
+-Employee Details Page
+-Salary Chart Page
+
+3️⃣ Details Page
+
+-Displays complete information of selected employee
+-Includes button to capture photo using device camera
+
+4️⃣ Photo Result Page
+
+-Displays the image captured from camera
+-Allows user to verify captured photo
+
+5️⃣ Chart Visualization Page
+
+-Bar chart displaying salaries of the first 10 employees
+-Provides visual representation of API data
+
+🛠️ Tech Stack
+
+-ReactJS (Vite)
+-React Router DOM
+-REST API Integration (Fetch/Axios)
+-HTML5 Camera API (MediaDevices)
+-Chart Library (Recharts / Chart.js)
+-CSS
+
+🔗 API Integration
+
+Endpoint:
+
+-https://backend.jotish.in/backend_dev/gettabledata.php
+
+-Request Method: POST
+
+Request Body:
+
+{
+  "username": "test",
+  "password": "123456"
+}
+📁 Project Structure
+src/
+ ├── pages/
+ │   ├── Login.jsx
+ │   ├── List.jsx
+ │   ├── Details.jsx
+ │   ├── PhotoResult.jsx
+ │   └── ChartPage.jsx
+ ├── App.jsx
+ └── main.jsx
+
+
+Clone the repository
+
+1.Install dependencies:
+
+-npm install
+
+2.Start development server:
+
+-npm run dev
+
+3.Open in browser:
+
+-http://localhost:5173
+
